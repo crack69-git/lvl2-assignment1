@@ -1,12 +1,14 @@
 # Type Narrowing
 
 Type Narrowing is the process of reducing a variable's possible types to a more specific type so that TypeScript can safely access properties and methods associated with that type.
+
 It is commonly used with union types.
+
 For example:
 let value: string | number;
-Here, value can be either a string or a number. Before using string-specific or number-specific methods, TypeScript needs to determine the actual type at runtime. This process is called type narrowing.
 
-1.typeof
+# 1.typeof
+
 ex:-
 
     function processInput(value: string | number): string | number {
@@ -17,7 +19,8 @@ ex:-
     return value * 10;
     }
 
-2.instanceof
+# 2.instanceof
+
 Ex:-
 
     class Dog {
@@ -40,7 +43,8 @@ Ex:-
     return animal.meow();
     }
 
-3.in
+# 3.in
+
 ex:
 interface Admin {
 name: string;

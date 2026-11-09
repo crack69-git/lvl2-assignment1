@@ -21,4 +21,3 @@ This repository contains my solutions for the TypeScript assignment. The assignm
 
 **How do Generics work in TypeScript, and how do they help when working with asynchronous Promise<T> responses?**
 [generic-work](generic-work.md)
-"# lvl2-assignment1" 
