@@ -47,17 +47,17 @@ Ex:-
 
 ex:
 
-    interface Admin {
-    name: string;
-    permissions: string[];
-    }
-    interface User {
-    name: string;
-    email: string;
-    }
-    function getInfo(person: Admin | User): string {
-    if ("permissions" in person) {
-    return `Admin: ${person.name}`;
-    }
-    return `User: ${person.name}`;
-    }
+        interface Admin {
+        name: string;
+        permissions: string[];
+        };
+        interface User {
+        name: string;
+        email: string;
+        };
+        function getInfo(person: Admin | User): string {
+        if ("permissions" in person) {
+        return `Admin: ${person.name}`;
+        }
+        return `User: ${person.name}`;
+        };
