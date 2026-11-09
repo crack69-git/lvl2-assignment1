@@ -51,15 +51,15 @@ name: string;
 permissions: string[];
 }
 
-interface User {
-name: string;
-email: string;
-}
+    interface User {
+    name: string;
+    email: string;
+    }
 
-function getInfo(person: Admin | User): string {
-if ("permissions" in person) {
-return `Admin: ${person.name}`;
-}
+    function getInfo(person: Admin | User): string {
+    if ("permissions" in person) {
+    return `Admin: ${person.name}`;
+    }
 
-return `User: ${person.name}`;
-}
+    return `User: ${person.name}`;
+    }
